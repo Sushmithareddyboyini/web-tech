@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ticket Booking Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#music">Music Concerts</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#bus">Bus Tickets</a></li>
+                <li><a href="#plane">Plane Tickets</a></li>
+                <li><a href="#train">Train Tickets</a></li>
+                <li><a href="#outdoor">Outdoor Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Music Concerts Section -->
+        <section id="music">
+            <h2>Music Concerts</h2>
+            <div class="carousel" id="musicCarousel">
+                <div class="carousel-item">
+                    <img src="https://blog.uber-cdn.com/cdn-cgi/image/width=960,quality=80,onerror=redirect,format=auto/wp-content/uploads/sites/213/2016/04/Uber_Chandigarh_Arijit-Singh-Live_Blog-Header_960x540.png" alt="Artist 1 Concert">
+                    <button onclick="bookTicket('Arijith Singh Concert')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbr1lTRIlWT80yOodXC0kVCfBYOa4CuHy7zw&s" alt="Artist 2 Concert">
+                    <button onclick="bookTicket('Anirudh Concert')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202411/diljit-dosanjh-concert-242157848-3x4.png?VersionId=0aKlg91MNeuFPKz4.V3CAx3o5F017IIK" alt="Artist 3 Concert">
+                    <button onclick="bookTicket('Diljith Concert')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.assettype.com/metrovaartha-en%2F2023-05%2F3b79c4f6-f27b-4dde-bba9-da3b2b84f858%2Far.jpg" alt="Artist 4 Concert">
+                    <button onclick="bookTicket('AR Rahmaan Concert')">Book Ticket</button>
+                </div>
+                <!-- Add more artists here -->
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section id="movies">
+            <h2>Movies</h2>
+            <div class="carousel" id="moviesCarousel">
+                <div class="carousel-item">
+                    <img src="https://diyatvusa.com/wp-content/uploads/2022/12/RRRposter.jpg" alt="Movie 1">
+                    <button onclick="bookTicket('RRR Movie')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgarY79EPQu_BBe86NdqmVxRhgH0N6AgLEA&s" alt="Movie 2">
+                    <button onclick="bookTicket(' Interstellar Movie')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Chhaava_film_poster.jpg" alt="Movie 3">
+                    <button onclick="bookTicket('chaava Movie')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLoGGY46WtEjYhR5SKItZCE1g6a0d7_YF7w&s" alt="Movie 4">
+                    <button onclick="bookTicket(' kalki Movie')">Book Ticket</button>
+                </div>
+                <!-- Add more movies here -->
+            </div>
+        </section>
+
+        <!-- Bus Tickets Section -->
+        <section id="bus">
+            <h2>Bus Tickets</h2>
+            <div class="carousel" id="busCarousel">
+                <div class="carousel-item">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/369790172/RP/OR/ZR/200122440/bus-tickets-booking-service-250x250.png" alt="Bus 1">
+                    <button onclick="bookTicket('Train ticket')">Book Ticket</button>
+                </div>
+                <!-- Add more bus options here -->
+            </div>
+        </section>
+
+        <!-- Plane Tickets Section -->
+        <section id="plane">
+            <h2>Plane Tickets</h2>
+            <div class="carousel" id="planeCarousel">
+                <div class="carousel-item">
+                    <img src="https://gos3.ibcdn.com/offer-1730871563.jpg" alt="Plane 1">
+                    <button onclick="bookTicket('plane ticket')">Book Ticket</button>
+                </div>
+                <!-- Add more plane options here -->
+            </div>
+        </section>
+
+        <!-- Train Tickets Section -->
+        <section id="train">
+            <h2>Train Tickets</h2>
+            <div class="carousel" id="trainCarousel">
+                <div class="carousel-item">
+                    <img src="https://images.emtcontent.com/bus-img/Train_OGTag.png" alt="Train 1">
+                    <button onclick="bookTicket('Train ticket')">Book Ticket</button>
+                </div>
+                </div>
+                <!-- Add more train options here -->
+            </div>
+        </section>
+
+        <!-- Outdoor Events Section -->
+        <section id="outdoor">
+            <h2>Outdoor Events</h2>
+            <div class="carousel" id="outdoorCarousel">
+                <div class="carousel-item">
+                    <img src="https://www.revv.co.in/blogs/wp-content/uploads/2020/03/holi-parties-in-hyderabad.jpg" alt="Outdoor Event 1">
+                    <button onclick="bookTicket('Holi Event')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2XtQUGrNUVmugsxlKVOx1uZAD6jaMvBV-A&s" alt="Outdoor Event 2">
+                    <button onclick="bookTicket('Dandiya night')">Book Ticket</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00063786-vdyrlzxywh-landscape.jpg" alt="Outdoor Event 3">
+                    <button onclick="bookTicket('Wonderla ticket')">Book Ticket</button>
+                </div>
+                
+                <!-- Add more outdoor events here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ticket Booking Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
